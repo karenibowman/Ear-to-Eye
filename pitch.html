@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<!--chrome compatible-->
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ear to Eye</title>
+		<!-- css links -->
+		<link rel="stylesheet" type="text/css" href="css/page-formatting.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu-formatting.css" />
+    <link rel="stylesheet" type="text/css" href="css/pitch.css">
+    <script src="js/pitch2.js"></script>
+    <!-- jquery link -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="flyer-top">
+        <span class="flyer-text-home"><a href="index2.html">< Home</a></span>
+				<span class="flyer-text">Karen Bowman</span>
+			</div>
+
+      <!-- info icon -->
+      <!-- <a id="info-link" href="about.html">i</a> -->
+
+      <div id="info" class="ease">
+        <button id="info-button" onclick="popupInfo()">i</button>
+        <span id="title">ABOUT PITCH</span>
+        <span id="text">
+          Pitch is often used to describe how high of low someone's voice is. The pitch of a sound depends on the frequency of its wave. Piano keys produce notes that increase in pitch from the left side of the keyboard to the right.
+
+          The display below shows frequncy, average pitch, and how on tune the pitch detected is. Try humming or playing a song and see how the pitch can change. How does the frequency change when you make a higher pitched noise?
+
+        </span>
+      </div>
+
+      <div id="detector" class="vague">
+        <span id="notice">Make noise to see Pitch in real time.</span>
+        <div class="pitch"><span id="pitch"></span></div>
+        <div class="note"><span id="note"></span></div>
+        <input id="display-slider" type="range" min="1" max="101" value="51">
+        <div class="marker"><span id="marker">^</span></div>
+        <div id="detune">
+          <span id="detune_amt"></span>
+          <span id="flat" style="display:none;">cents &#9837;</span><span id="sharp" style="display:none;">cents &#9839;</span>
+        </div>
+      </div>
+
+			<div class="component">
+				<!-- Start Nav Structure -->
+				<button class="cn-button" id="cn-button">Menu</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+					<ul>
+            <li><a href='bars.html'><span>Bars</span></a></li>
+            <li><a href="bubbles.html"><span>Bubbles</span></a></li>
+            <li><a href="index2.html"><span>Home</span></a></li>
+            <li><a href="pitch.html"><span>Pitch</span></a></li>
+            <li><a href="about.html"><span>About</span></a></li>
+					 </ul>
+				</div>
+				<!-- End of Nav Structure -->
+			</div>
+		</div><!-- /container -->
+		<!-- class management js file -->
+	  <script src="js/polyfills.js"></script>
+		<!-- menu js file -->
+		<script src="js/menu.js"></script>
+		<!-- audio capabilities -->
+		<!-- <script src="js/audio-base.js"></script> -->
+		<!-- For the demo ad only -->
+	</body>
+</html>

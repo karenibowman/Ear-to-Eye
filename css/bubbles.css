@@ -1,0 +1,47 @@
+
+html, body{
+  background-color: #362340;
+}
+
+/* back button  */
+.flyer-text-home a{
+  	text-decoration: none;
+  	padding: 0 1em;
+  	letter-spacing: 0.1em;
+  	color: #fff;
+  	display: inline-block;
+}
+
+.flyer-text-home a:hover{
+  	color: #222;
+    background-color: #fff;
+}
+
+#visualizer{
+  height: 80vh;
+  width: 100vw;
+}
+
+.component{
+  height: 10vh;
+}
+
+
+.ripple{
+  cx: 100;
+  cy: 150;
+  
+}
+
+#notice{
+      top: 10vh;
+      font-size: 8vh;
+      padding: 5vh;
+      position: absolute;
+      text-align: center;
+      color: rgba(255,255,255,.5);
+  }
+
+#notice-container{
+  text-align: center;
+}

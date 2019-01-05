@@ -1,0 +1,30 @@
+html, body{
+  background: 	#5a5898;
+}
+
+.component{
+  background: rgba(66,44,107,.5);
+}
+
+/* back button  */
+.flyer-text-home a{
+  	text-decoration: none;
+  	padding: 0 1em;
+  	letter-spacing: 0.1em;
+  	color: #fff;
+  	display: inline-block;
+}
+
+.flyer-text-home a:hover{
+  	color: #222;
+    background-color: #fff;
+}
+/* text */
+#text{
+    LINE-HEIGHT:5vh;
+  padding: 10vh;
+  height: 80vh;
+  font-size: 3vh;
+  padding: 10vh;
+  color:rgba(255,255,255,0.5);
+}

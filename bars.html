@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<!--chrome compatible-->
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ear to Eye</title>
+		<!-- css links -->
+		<link rel="stylesheet" type="text/css" href="css/page-formatting.css" />
+		<link rel="stylesheet" type="text/css" href="css/menu-formatting.css" />
+    <link rel="stylesheet" type="text/css" href="css/bars.css">
+    <script src="js/bars.js"></script>
+    <!-- jquery link -->
+		<script src="js/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="flyer-top">
+        <span class="flyer-text-home"><a href="index2.html">< Home</a></span>
+				<span class="flyer-text">Karen Bowman</span>
+			</div>
+
+			<div id="info" class="ease">
+				<button id="info-button" onclick="popupInfo()">i</button>
+				<span id="title">ABOUT THIS DISPLAY</span>
+				<span id="text">
+					This display is a representation of a fourier transform - a function of time in regard the frequencies registered in sound.
+					Typically, sound is represented as one continous wave. A fourier transform, or "frequency represention function," is a collecion
+					of how frequently certain sized "peaks" appear in the sound detected. The bars on the left are associated with smaller peaks,
+					the ones on the right with lower peaks. If you try singing a pitch, can you get a steady peak to form on the graph?
+				</span>
+			</div>
+
+      <div id="svg">
+        <svg preserveAspectRatio="none" id="visualizer" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               <defs>
+                  <!-- bars are displayed in the mask overlay -->
+                   <mask id="mask">
+                       <g id="maskGroup">
+                     </g>
+                   </mask>
+
+                   <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                       <stop offset="0%" style="stop-color:#ff0a0a;stop-opacity:1" />
+                       <stop offset="20%" style="stop-color:#f1ff0a;stop-opacity:1" />
+                       <stop offset="90%" style="stop-color:#d923b9;stop-opacity:1" />
+                       <stop offset="100%" style="stop-color:#050d61;stop-opacity:1" />
+                   </linearGradient>
+               </defs>
+               <rect x="0" y="0" width="100%" height="100%" fill="url(#gradient)" mask="url(#mask)"></rect>
+           </svg>
+      </div>
+
+			<div class="component">
+
+				<!-- Start Nav Structure -->
+				<button class="cn-button" id="cn-button">Menu</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+					<ul>
+						<li><a href='bars.html'><span>Bars</span></a></li>
+						<li><a href="bubbles.html"><span>Bubbles</span></a></li>
+						<li><a href="index2.html"><span>Home</span></a></li>
+						<li><a href="pitch.html"><span>Pitch</span></a></li>
+						<li><a href="about.html"><span>About</span></a></li>
+					 </ul>
+				</div>
+				<!-- End of Nav Structure -->
+			</div>
+		</div><!-- /container -->
+		<!-- class management js file -->
+	  <script src="js/polyfills.js"></script>
+		<!-- menu js file -->
+		<script src="js/menu.js"></script>
+		<!-- audio capabilities -->
+		<!-- <script src="js/audio-base.js"></script> -->
+		<!-- For the demo ad only -->
+	</body>
+</html>
